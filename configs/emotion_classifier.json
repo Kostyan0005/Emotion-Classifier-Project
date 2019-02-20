@@ -1,0 +1,30 @@
+{
+  "exp_name": "emotion_classifier_1",
+
+  "data_dir": "../data/emotion_classifier/",
+
+  "path_to_example": "example/example.wav",
+
+  "vggish_model_checkpoint_path": "vggish/vggish_model.ckpt",
+  "vggish_pca_params_path": "vggish/vggish_pca_params.npz",
+
+  "win_size": 50,
+  "silence_threshold": 0.01,
+  "audio_len": 259431,
+
+  "vggish_hop_size": 0.23,
+  "vggish_embedding_size": 128,
+  "audio_split_size": 20,
+
+  "num_classes": 8,
+
+  "dropout_rate": 0.6,
+  "batch_size": 128,
+  "num_epochs": 160,
+  "learning_rate": 1e-4,
+
+  "max_to_keep": 5,
+
+  "num_parallel_calls": 4,
+  "save_summary_steps": 1
+}
