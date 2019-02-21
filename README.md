@@ -89,18 +89,10 @@ but none of those seemed to increase the model accuracy on development set. This
 Let's look at the confusion matrix of the best model.
 ![Confusion matrix](data/emotion_classifier/confusion_matrix.png)
 
-As you see, only the last two emotions (disgusted, surprised) are classified pretty good, while there is a lot of confusion among the rest of emotions. As an example of a pair of most frequently confused emotions, let's consider *sad* and *calm* emotions. If you were to listen to  
-
-<audio controls="controls">
-    <source type="audio/wav" src="data/emotion_classifier/example/calm_emotion_example.wav"></source>
-</audio>
-
-and  
-
-<audio controls="controls">
-    <source type="audio/wav" src="data/emotion_classifier/example/sad_emotion_example.wav"></source>
-</audio>
-
+As you see, only the last two emotions (disgusted, surprised) are classified pretty good, while there is a lot of confusion among the rest of emotions. As an example of a pair of most frequently confused emotions, let's consider *sad* and *calm* emotions. If you were to listen to
+[first audio](https://github.com/Kostyan0005/Emotion-Classifier-Project/tree/master/data/emotion_classifier/example/calm_emotion_example.wav)
+and
+[second audio](https://github.com/Kostyan0005/Emotion-Classifier-Project/tree/master/data/emotion_classifier/example/sad_emotion_example.wav),
 would you be able to tell that the first one is calm and the second one is sad? Or is it vice versa?  
 There are many such examples in this dataset, which makes me confident to state that the **Bayes error** for this problem is quite **high**.
 
